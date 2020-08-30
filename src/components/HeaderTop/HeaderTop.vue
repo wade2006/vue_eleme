@@ -8,10 +8,12 @@
         </header>
 </template>
 <script>
-export default {
+
+ export default {
   props:{
     title:String
-  }
+  },
+ 
 };
 </script>
 <style lang='stylus' rel='stylesheet/stylus'>

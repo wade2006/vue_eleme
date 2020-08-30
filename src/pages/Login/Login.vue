@@ -52,7 +52,14 @@
     </section>
 </template>
 <script>
-export default {}
+import {reqFoodCategorys} from '../../api/index'
+export default {
+  async mounted () {
+
+    const reslut=await reqFoodCategorys();
+    console.log(reslut)
+  }
+}
 </script>
 <style lang='stylus' rel='stylesheet/stylus'>
 @import "../../common/stylus/mixins.styl";
