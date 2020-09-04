@@ -7,16 +7,18 @@
 <script>
 import FooterGuide from './components/FooterGuide/FooterGuide'
 import {mapActions} from 'vuex'
+import './mock/mockServer';
 export default {
   mounted () {
     // this.$store.dispatch('getAddress')  //异步获取当前地址，和下面方式一样
     this.getAddress()
+    this.getUserInfo()
   },
   components: {
     FooterGuide
   },
   methods: {
-    ...mapActions(["getAddress"])
+    ...mapActions(["getAddress","getUserInfo"])
   }
 }
 </script>
